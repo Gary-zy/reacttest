@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../react.development.js"></script>
+    <script src="../react-dom.development.js"></script>
+    <script src="../babel.min.js"></script>
+</head>
+<body>
+
+    <div id="test">
+        1
+    </div>
+    <script type="text/babel">
+        // 创建虚拟DOM
+       let DOM = React.createElement('div', {id: 'a',style:{color:"red"}}, 'hello react')
+        // 渲染虚拟DOM
+        ReactDOM.render(DOM, document.getElementById('test'))
+    </script>
+</body>
+
+</html>
